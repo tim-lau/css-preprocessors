@@ -1,0 +1,76 @@
+body {
+  background: #262626;
+  font-family: helvetica; }
+
+header {
+  margin-left: 5%; }
+  header h1 {
+    color: #708C87; }
+  header h2 {
+    color: #d4f0eb;
+    margin-left: 10%; }
+  header a {
+    color: #d4f0eb; }
+
+p {
+  padding: 10px; }
+
+h1, h2, h3 {
+  color: #BE1947; }
+
+a {
+  color: #ff7dab; }
+
+.gradient {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 1%;
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #e6e6e6);
+  background-image: -o-linear-gradient(top, #FFFFFF, #e6e6e6); }
+  .gradient .intro, .gradient .feature {
+    background: #333;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+    .gradient .intro .par1, .gradient .feature .par1 {
+      color: #e6e6e6; }
+      .gradient .intro .par1 a, .gradient .feature .par1 a {
+        font-size: 20px; }
+      .gradient .intro .par1 a:hover, .gradient .feature .par1 a:hover {
+        color: #708C87;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px; }
+      .gradient .intro .par1 strong, .gradient .feature .par1 strong {
+        color: #708C87; }
+  .gradient .feature {
+    border: 3px dotted #ff7dab; }
+
+.button {
+  padding: 1em 2em;
+  width: 30%;
+  margin: 1em auto;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  border-radius: 10px; }
+
+.button-1 {
+  background: #45a21a;
+  color: #FFFFFF; }
+
+.button-2 {
+  background: #ffc53a;
+  color: #000000; }
+
+.button-3 {
+  background: #ac2222;
+  color: #FFFFFF; }
+
+/*# sourceMappingURL=style.css.map */

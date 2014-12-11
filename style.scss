@@ -1,0 +1,86 @@
+$margin: 5%; 
+$red: #BE1947;
+$offred: $red + 100;
+$blue: #708C87;
+$offblue: $blue + 100;
+$white: #FFFFFF;
+$offwhite: $white - 25;
+
+@mixin border-radius($radius: 20px) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+		    border-radius: $radius;
+}
+
+body { background: #262626; font-family: helvetica; }
+
+header {margin-left: $margin;
+	h1 { color: $blue; }
+	h2 { color: $offblue; margin-left: $margin + 5%;} 
+	a { color: $offblue; }
+}
+
+p { padding: 10px; }
+
+h1, h2, h3 { color: $red; }
+
+a { color: $offred; }
+
+.gradient {
+		@include border-radius;
+	padding: 1%;
+	background-color: $offwhite;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($white), to($offwhite));
+	background-image: -webkit-linear-gradient(top, $white, $offwhite);
+	background-image:	 -moz-linear-gradient(top, $white, $offwhite);
+	background-image:     -ms-linear-gradient(top, $white, $offwhite);
+	background-image: 	   -o-linear-gradient(top, $white, $offwhite);
+	.intro { background: #333; @include border-radius; 
+		.par1 { color: $offwhite;
+			a { font-size: 20px; }
+			a:hover { color: $blue; @include border-radius(10px); }
+			strong { color: $blue; }
+		}
+	}
+	.feature { @extend .intro; border: 3px dotted $offred; }
+}
+
+@function button-text-color($color) {
+    @if (lightness( $color ) > 50) {
+      @return #000000; // Lighter color, return black
+    }
+    @else {
+      @return #FFFFFF; // Darker color, return white
+    }
+}
+
+$button-1: hsla(101, 72%, 37%, 1);  // Green
+$button-2: #ffc53a;                 // Yellow
+$button-3: rgb(172, 34, 34);          // Red
+
+%button {
+    padding: 1em 2em;
+    width: 30%;
+    margin: 1em auto;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.button {
+    @extend %button;
+}
+.button-1 {
+    background: $button-1;
+    color: button-text-color($button-1);
+}
+.button-2 {
+    background: $button-2;
+    color: button-text-color($button-2);
+}
+.button-3 {
+    background: $button-3;
+    color: button-text-color($button-3);
+}
