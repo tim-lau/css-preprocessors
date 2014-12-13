@@ -21,6 +21,15 @@ h1, h2, h3 {
 a {
   color: #ff7dab; }
 
+.par-1 {
+  font-size: 15px; }
+
+.par-2 {
+  font-size: 30px; }
+
+.par-3 {
+  font-size: 45px; }
+
 .gradient {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -37,16 +46,38 @@ a {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px; }
-    .gradient .intro .par1, .gradient .feature .par1 {
+    .gradient .intro .par-1, .gradient .feature .par-1 {
       color: #e6e6e6; }
-      .gradient .intro .par1 a, .gradient .feature .par1 a {
+      .gradient .intro .par-1 a, .gradient .feature .par-1 a {
         font-size: 20px; }
-      .gradient .intro .par1 a:hover, .gradient .feature .par1 a:hover {
+      .gradient .intro .par-1 a:hover, .gradient .feature .par-1 a:hover {
         color: #708C87;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px; }
-      .gradient .intro .par1 strong, .gradient .feature .par1 strong {
+      .gradient .intro .par-1 strong, .gradient .feature .par-1 strong {
+        color: #708C87; }
+    .gradient .intro .par-2, .gradient .feature .par-2 {
+      color: #e6e6e6; }
+      .gradient .intro .par-2 a, .gradient .feature .par-2 a {
+        font-size: 20px; }
+      .gradient .intro .par-2 a:hover, .gradient .feature .par-2 a:hover {
+        color: #708C87;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px; }
+      .gradient .intro .par-2 strong, .gradient .feature .par-2 strong {
+        color: #708C87; }
+    .gradient .intro .par-3, .gradient .feature .par-3 {
+      color: #e6e6e6; }
+      .gradient .intro .par-3 a, .gradient .feature .par-3 a {
+        font-size: 20px; }
+      .gradient .intro .par-3 a:hover, .gradient .feature .par-3 a:hover {
+        color: #708C87;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px; }
+      .gradient .intro .par-3 strong, .gradient .feature .par-3 strong {
         color: #708C87; }
   .gradient .feature {
     border: 3px dotted #ff7dab; }
@@ -62,15 +93,15 @@ a {
   border-radius: 10px; }
 
 .button-1 {
-  background: #45a21a;
-  color: #FFFFFF; }
-
-.button-2 {
-  background: #ffc53a;
+  background: #ffd689;
   color: #000000; }
 
-.button-3 {
-  background: #ac2222;
+.button-2 {
+  background: #1483ae;
   color: #FFFFFF; }
+
+.button-3 {
+  background: #f98c8c;
+  color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

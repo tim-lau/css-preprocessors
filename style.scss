@@ -26,8 +26,14 @@ h1, h2, h3 { color: $red; }
 
 a { color: $offred; }
 
+@for $i from 1 through 3 {
+	.par-#{$i} {
+		font-size: 15px * $i;
+	}
+}
+
 .gradient {
-		@include border-radius;
+	@include border-radius;
 	padding: 1%;
 	background-color: $offwhite;
 	background-image: -webkit-gradient(linear, left top, left bottom, from($white), to($offwhite));
@@ -36,7 +42,17 @@ a { color: $offred; }
 	background-image:     -ms-linear-gradient(top, $white, $offwhite);
 	background-image: 	   -o-linear-gradient(top, $white, $offwhite);
 	.intro { background: #333; @include border-radius; 
-		.par1 { color: $offwhite;
+		.par-1 { color: $offwhite;
+			a { font-size: 20px; }
+			a:hover { color: $blue; @include border-radius(10px); }
+			strong { color: $blue; }
+		}
+		.par-2 { color: $offwhite;
+			a { font-size: 20px; }
+			a:hover { color: $blue; @include border-radius(10px); }
+			strong { color: $blue; }
+		}
+		.par-3 { color: $offwhite;
 			a { font-size: 20px; }
 			a:hover { color: $blue; @include border-radius(10px); }
 			strong { color: $blue; }
@@ -47,16 +63,16 @@ a { color: $offred; }
 
 @function button-text-color($color) {
     @if (lightness( $color ) > 50) {
-      @return #000000; // Lighter color, return black
+      @return #000000; // if light color, return black
     }
     @else {
-      @return #FFFFFF; // Darker color, return white
+      @return #FFFFFF; // if dark color, return white
     }
 }
 
-$button-1: hsla(101, 72%, 37%, 1);  // Green
-$button-2: #ffc53a;                 // Yellow
-$button-3: rgb(172, 34, 34);          // Red
+$button-1: #ffd689;
+$button-2: #1483ae;               
+$button-3: #f98c8c;          
 
 %button {
     padding: 1em 2em;
